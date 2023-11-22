@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   </head>
 <body>
@@ -22,19 +24,19 @@
             <!-- class container:took 80% of the parent and margin wiil be be auto -->
 
            
-           <a href="#"><svg   xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 512 512">! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.<path d="M326.3 218.8c0 20.5-16.7 37.2-37.2 37.2h-70.3v-74.4h70.3c20.5 0 37.2 16.7 37.2 37.2zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-128.1-37.2c0-47.9-38.9-86.8-86.8-86.8H169.2v248h49.6v-74.4h70.3c47.9 0 86.8-38.9 86.8-86.8z"/></svg></a>
+           <a href="#"><i class="fa-solid fa-cart-shopping fa-bounce fa-2xl" style="color: #000000;"></i></svg></a>
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
                 <!-- margin="m"
                 padding="p" -->
               <li class="nav-item">
-                <a class="nav-link active ms-5" aria-current="page" href="#">HOME</a>
+                <a class="nav-link active " aria-current="page" href="#">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">STYLE</a>
+                <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
               </li>
               <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,7 +50,10 @@
                 </ul>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">ICON</a>
+                <a class="nav-link active" aria-current="page" href="#">HELP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">MORE</a>
               </li>
 
             </ul>
@@ -71,14 +76,14 @@
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner sm-5">
-          <div class="carousel-item active">
+          <div class="carousel-item active"  data-bs-interval="2000">
             <img src="./images/3.jpg" class="d-block  w-100 " height="920px" alt="...">
             <div class="carousel-caption d-none d-md-block ">
               <h5><span style="color: rgb(0, 0, 0);"><b>boAt</b></span></h5>
               <p><span style="color: rgb(0, 0, 0);">Go extra on celebration & savings with <b>Bond With boAt</b></span></p>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="10000">
             <img src="./images/7.jpg" class="d-block w-100 " height="920px" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5><span style="color: rgb(0, 0, 0);"><b>Mac Book</b></span></h5>
@@ -86,7 +91,7 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></a>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="10000">
             <img src="./images/9.jpg" class="d-block w-100" height="920px" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5><span style="color: rgb(255, 255, 255);"><b>Peter England</b></span></h5>
@@ -103,10 +108,11 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <div class="container">
+      <div class="container-fluid">
+        <!-- <div class="padding"> -->
         <div class="row mt-4 mb-10">
           <div class="col-lg-3 col-mt-12  col-sm-6">
-            
+
             <div class="card text-center mb-3" style="width: 18rem;">
               <img src="./images/8.jpg" class="card-img-top p-3" alt="...">
               <div class="card-body">
@@ -135,6 +141,7 @@
                 <a href="#" class="btn btn-primary">GET</a>
               </div>
             </div>
+          
           </div>
           <div class="col-lg-3 col-mt-6  col-sm-6">
             <div class="card text-center mb-3" style="width: 18rem;">
@@ -148,7 +155,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row mt-12 mb-10">
           <div class="col-lg-3 col-mt-6  col-sm-6">
             <div class="card text-center mb-3" style="width: 18rem;">
@@ -192,20 +199,9 @@
           </div>
         </div>
       </div>
-      <div class="card text-center ms-5 me-5 mt-5 ">
-        <div class="card-header">
-          <!-- Featured -->
-        </div>
-        <div class="card-body " >
-          <h5 class="card-title ms-5"></h5>
-          <a href="#" class="btn btn-success">HOME</a><br><br>
-          <p class="card-text"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg></a></p>
-          
-        </div>
-        <div class="card-footer text-body-secondary">
-        </div>
-      </div>
-      
+   <div class="btn">
+    <button>HOME</button>
+   </div>
     
 </body>
 </html>
