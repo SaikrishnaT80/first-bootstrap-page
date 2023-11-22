@@ -16,7 +16,7 @@
 }
 .btnn button:active{
     transform: scale(0.96);
-    background-color: green;
+    background-color: rgb(25, 161, 25);
 }
 
 .btnn button{
